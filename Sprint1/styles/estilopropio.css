@@ -1,0 +1,303 @@
+/* HOME */
+body{
+    background: linear-gradient(to bottom, rgb(186, 186, 233), white);
+}
+
+.menu{
+    
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+
+.image{
+    margin-top: 10px;
+    border: black solid;
+}
+
+header{
+    background-image: url(/imágenes/programacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    height: 250px;
+    margin-top: -70px;
+}
+
+.video{
+    text-align: center;
+}
+h1{
+    color: rgb(98, 98, 100);
+    font-size: 100px;
+    text-align: center;
+}
+
+
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    
+}
+
+.parent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+
+.chill__day{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 15px; 
+}
+
+.chill__day-month{
+    margin: 20px;
+    line-height: 5px;
+}
+
+.chill__tittle-location{
+    margin: 20px;
+    line-height: 5px;
+    text-decoration: underline;
+}
+
+.chill__sign-up{
+    margin: 10px;
+    padding: 30px;
+}
+
+.tittle{
+    font-weight: bolder;
+}
+
+
+
+.separation{
+        width: 25%;
+}
+
+/* CONOCENOS */
+.intro{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+
+.imgRedonda{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    clear: left;
+}
+
+.parentConocenos{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mentor1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.mentor2{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    order: 3;
+}
+
+.mentor3{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.pie_redes{
+    display: flex;
+}
+.pie_redes img{
+    height: 50px;
+    width: 70px;
+    border: 1px solid black;
+}
+
+.facebook{
+    margin-left: 1100px;
+}
+
+
+
+
+
+
+/* CONTACTO */
+.info{
+    text-align: center;
+}
+
+a{ 
+    color: inherit; text-decoration: none;
+ }
+
+
+
+/* TABLAS */
+
+h3{
+    text-align: center;
+}
+.tablas{
+    background-color: white;
+}
+
+.alumnos table{
+text-align: left;
+  border-collapse: collapse;
+  font-family: 'helvetica neue', helvetica, arial;
+  background-color: thistle;
+  padding: 10px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+caption{
+    text-align:center;
+}
+
+.alumnos th,td{
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+
+.alumnos table th {
+    background-color: rgb(155, 131, 241); 
+}
+
+.alumnos table tr:nth-child {
+    background-color: rgb(212, 202, 226);
+}
+
+.alumnos table tr:nth-child(even) {
+    background-color: rgb(184, 176, 206);
+}
+
+/* LISTAS */
+
+.flex-container-listas{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.lista{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: black 1px solid;
+    box-shadow: 4px 4px 3px rgb(192, 187, 187);
+    margin: 10px;
+    width: 300px;
+}
+
+.lista ul{
+    list-style-image: url(/imágenes/tick.jpg);
+    margin: 20px;
+
+}
+
+.lista p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.lista-horario{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    flex-wrap: wrap;
+    background-image: url(/imágenes/horario.jpg);
+}
+
+
+.lista-horario li{
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: black 1px solid;
+    box-shadow: 4px 4px 3px rgb(192, 187, 187);
+    margin: 5px;
+    width: 400px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.horario-titulo{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.horario-contenido{
+    font-size: 18px;
+    margin:10px; 
+}
+
+
+/* FORMULARIOS */
+
+.tarjeta{
+    background-color: white;
+    padding: auto;
+    border-radius: 20px;
+    border: black 1px solid;
+    box-shadow: 4px 4px 3px rgb(192, 187, 187);
+    margin: auto;
+    width: 300px;
+}
+
+
+

@@ -1,0 +1,42 @@
+body{
+    background-image: url('pexels-photo-5412432.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+div{
+    padding: 15px;
+}
+
+#result{
+    border-color: black;
+    border-style: solid;
+    background-color: white;
+    padding: 10px;
+}
+
+.button-operator{
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+}
+
+#operator{
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}

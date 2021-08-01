@@ -1,0 +1,132 @@
+/* HOME */
+
+.menu{
+    padding: 10px;
+    border: 2px solid;
+    width: 300px;
+    text-align: center;
+}
+
+.image{
+    margin-top: -30px;
+    border: black solid;
+
+}
+
+header{
+    background-image: url(/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1{
+    color: rgb(225, 225, 235);
+    font-size: 100px;
+    text-decoration: underline;
+
+}
+
+h2{
+    text-align: center;
+    
+}
+
+.parent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.chill__day{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 15px;
+
+}
+
+.chill__day-month{
+    margin: 10px;
+    line-height: 5px;
+}
+
+.chill__tittle-location{
+    margin: 10px;
+    line-height: 5px;
+}
+
+.chill__sign-up{
+    margin: 10px;
+    padding: 30px;
+}
+
+.tittle{
+    font-weight: bolder;
+}
+
+
+
+.separation{
+        width: 25%;
+}
+
+/* CONOCENOS */
+.intro{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.imgRedonda{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    clear: left;
+}
+
+.parentConocenos{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mentor1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.mentor2{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    order: 3;
+}
+
+.mentor3{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* CONTACTO */
+.info{
+    text-align: center;
+}

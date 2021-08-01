@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+
+<body>
+    <h1> CALCULADORA </h1>
+    <div> 
+        <div>
+            <input type="number" id="left" />
+            <span id="operator"> </span>
+            <input type="number" id="right" />
+            <span>=</span>
+            <span id="result">0</span>
+        </div>
+        <br />
+        <div>
+            <input type="button" value="+" id="button-suma" class="button-operator">
+            <input type="button" value="-" id="button-resta" class="button-operator">
+            <input type="button" value="*" id="button-multiplicacion" class="button-operator">
+            <input type="button" value="/" onclick="division()" class="button-operator">
+        </div>
+    </div>
+
+
+
+    <script src="./calculadora.js" language="javascript" type="text/javascript"></script>
+</body>
+
+</html>
