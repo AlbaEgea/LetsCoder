@@ -1,6 +1,24 @@
-console.log(dataClasificaciones.standings);
 
-function crearTabla() {
+
+const url = "https://api.football-data.org/v2/competitions/2014/standings"
+
+function getFetch() {
+  fetch(url, {
+      method: "GET",
+      headers: {
+        "X-Auth-Token": " 8ba03b8571e54c619b81d5a8e6b292ad"
+      }
+    })
+    .then(response => {
+      return response.json();
+    }).then(data => {
+      crearTabla(data);
+    }).catch(error => {
+      console.log(error);
+    });
+}
+
+function crearTabla(dataClasificaciones) {
   let tabla = document.getElementById("tabla-clasificacion");
   const numeroClasificaciones = dataClasificaciones.standings[0].table.length;
 
@@ -137,3 +155,5 @@ function crearTabla() {
       return columnaPuntos;
     }
 }
+
+getFetch();

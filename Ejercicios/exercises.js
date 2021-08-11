@@ -1,6 +1,21 @@
 //1. Compara tu edad (o una cualquiera) con la de Fernando Simón. muestra en consola si eres menor, mayor o tienes la misma edad que él.
 //if()
+function comparaEdad(nombre, edad){
+    const edadFernando = 58;
 
+    if (edad < edadFernando){
+        console.log(nombre + " eres menor que Fernando Simón");
+    }
+    else if (edad > edadFernando){
+        console.log(nombre + " eres mayor que Fernando Simón");
+    }
+    else {
+        console.log(nombre + " tienes la misma edad que Fernando Simón")
+    }
+}
+
+comparaEdad('Juan',72);
+comparaEdad('Alba', 21);
 
 //2. Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una string que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.
 //if(), %
@@ -97,3 +112,5 @@ let mentor = {
 
 let edadTuca = 4;
 let edadTam = 2; 
+
+

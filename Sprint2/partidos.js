@@ -1,6 +1,32 @@
 // console.log(data.matches);
 
-crearTabla(data.matches);
+let inputBuscador = document.getElementById("buscador");
+
+
+const url = "https://api.football-data.org/v2/competitions/2014/matches?season=2020"
+
+function getFetch() {
+  fetch(url, {
+      method: "GET",
+      headers: {
+        "X-Auth-Token": " 8ba03b8571e54c619b81d5a8e6b292ad"
+      }
+    })
+    .then(response => {
+      return response.json();
+
+    }).then(data => {
+      let partidos = data.matches;
+    
+
+      inputBuscador.addEventListener("keyup", function () {
+        buscador(partidos);
+      });
+      crearTabla(partidos);
+    }).catch(error => {
+      console.log(error);
+    });
+}
 
 function crearTabla(partidos) {
   let tabla = document.getElementById("tabla-partidos");
@@ -109,24 +135,22 @@ function crearTabla(partidos) {
 
 
 function buscador(partidos) {
-  let inputbuscador = document.getElementById("buscador");
-  if (inputbuscador.value == "") {
+  console.log(partidos);
+  if (inputBuscador.value == "") {
     crearTabla(partidos);
   }
- 
-  
+
+
   let datosFiltrados = partidos.filter((nombres) => {
     return (
-      nombres.homeTeam.name.toLowerCase().includes(inputbuscador.value.toLowerCase()) ||      
-      nombres.awayTeam.name.toLowerCase().includes(inputbuscador.value.toLowerCase())
+      nombres.homeTeam.name.toLowerCase().includes(inputBuscador.value.toLowerCase()) ||
+      nombres.awayTeam.name.toLowerCase().includes(inputBuscador.value.toLowerCase())
     );
 
   });
-  console.log(partidos);
+  // console.log(partidos);
   crearTabla(datosFiltrados);
-  // console.log(datosFiltrados);
+  console.log(datosFiltrados);
 }
-let inputBuscador = document.getElementById("buscador");
-inputBuscador.addEventListener("keyup", function () {
-  buscador(data.matches);
-});
+
+getFetch();
